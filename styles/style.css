@@ -1,4 +1,4 @@
-body {background-color: #2B2B2B; position: relative;}
+body {background-color: #222222; position: relative;}
 
 h1, h2, h3, h4, h5, h6 {font-family: 'Tinos', serif;}
 p {font-family: 'Raleway', sans-serif;}
@@ -42,7 +42,7 @@ and (orientation: landscape) {
 
 .affix ~ .container-fluid {position: relative; top: 50px;}
 
-.dropdown-menu {background-color: #2B2B2B;}
+.dropdown-menu {background-color: #222222;}
 
 #menu-item {color: white;}
 
