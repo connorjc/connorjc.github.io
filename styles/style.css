@@ -1,0 +1,74 @@
+body {background-color: #2B2B2B; position: relative;}
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Tinos', serif;}
+p {font-family: 'Raleway', sans-serif;}
+
+img.imgNav {filter: invert(100%);}
+
+.page {padding-top: 50px; padding-bottom: 10px; height: auto;}
+.section {padding-bottom: 15px; border-style: none none groove none;}
+/*
+@media screen and (min-width: 480px) {
+    .content {padding-left: 30px; padding-right: 30px;}
+}
+*/
+
+/* Adjust icons so that they aren't cut off on MEDIUM devices */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: landscape) {
+    .content {padding-left: 80px; padding-right: 80px;}
+}
+
+/* Hide icons on LARGE devices that they aren't cut off in early dimensions */
+@media only screen
+and (min-width: 1200px) 
+and (max-width: 1330px)
+and (orientation: landscape) {
+    .logo {visibility: hidden;}
+}
+
+
+.banner {background-color: white; color: black; height: 200px;}
+
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+
+.navbar {margin-bottom: 0px;}
+
+.affix ~ .container-fluid {position: relative; top: 50px;}
+
+.dropdown-menu {background-color: #2B2B2B;}
+
+#menu-item {color: white;}
+
+/*light pink*/
+#about {background-color: #F3B4B4;}
+/*almond*/
+#resume {background-color: #EFDECD; margin-bottom: 50px;}
+/*light gray
+#projects {background-color: #C8C5C5;}
+/*light blue
+#contact {background-color: #A1CCF6;}
+*/
+
+#BaruchHashem {color: white; font-family: 'Tinos', serif;}
+
+img.seal {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: -95px;
+    margin-top: -5px;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: filter 1s;
+}
+
+img.seal:hover {
+    filter: grayscale(0%);
+}
