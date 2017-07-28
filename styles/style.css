@@ -49,9 +49,9 @@ and (orientation: landscape) {
 /*light pink*/
 #about {background-color: #F3B4B4;}
 /*almond*/
-#resume {background-color: #EFDECD; margin-bottom: 50px;}
-/*light gray
-#projects {background-color: #C8C5C5;}
+#resume {background-color: #EFDECD;}
+/*light gray*/
+#projects {background-color: #C8C5C5; margin-bottom: 50px;}
 /*light blue
 #contact {background-color: #A1CCF6;}
 */
