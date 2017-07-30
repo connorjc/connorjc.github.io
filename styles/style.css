@@ -7,6 +7,13 @@ img.imgNav {filter: invert(100%);}
 
 .page {padding-top: 50px; padding-bottom: 10px; height: auto;}
 .section {padding-bottom: 15px; border-style: none none groove none;}
+.code_block {
+    border: 2px solid;
+    border-radius: 10px;
+    margin: 15px -10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
 /*
 @media screen and (min-width: 480px) {
     .content {padding-left: 30px; padding-right: 30px;}
@@ -38,7 +45,7 @@ and (orientation: landscape) {
     z-index: 9999 !important;
 }
 
-.navbar {margin-bottom: 0px;}
+.navbar {margin-bottom: 0px;}   
 
 .affix ~ .container-fluid {position: relative; top: 50px;}
 
@@ -57,6 +64,19 @@ and (orientation: landscape) {
 */
 
 #BaruchHashem {color: white; font-family: 'Tinos', serif;}
+
+#uname {font-size: 17px;}
+
+/*#BA1414;#D3920E;/*#AA6ED8;/*#7C45A5;#45A54D;#368FE2;
+   RED     ORANGE   lPURPLE  PURPLE   GREEN    lBLUE*/
+#blfs {border-color: #45A54D;}
+
+#pizzapi {border-color: #D3920E;}
+#description {
+    padding-bottom: 10px;
+    border-style: none none double none;
+    border-color: #BA1414;
+}
 
 img.seal {
     width: 60px;
