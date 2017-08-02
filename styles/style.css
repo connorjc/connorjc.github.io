@@ -3,7 +3,23 @@ body {background-color: #222222; position: relative;}
 h1, h2, h3, h4, h5, h6 {font-family: 'Tinos', serif;}
 p {font-family: 'Raleway', sans-serif;}
 
-img.imgNav {filter: invert(100%);}
+.command{
+    background-color: #E5E5E5;
+    border: 1px solid black;
+    border-radius: 0;
+    padding: .5em 1em;
+}
+code {
+    font-family: monospace;
+    font-weight: bold;
+    background-color: #E5E5E5;
+    color: black;
+    border: none;
+}
+samp {
+    font-weight: normal;
+    font-family: monospace;
+}
 
 .page {padding-top: 50px; padding-bottom: 10px; height: auto;}
 .section {padding-bottom: 15px; border-style: none none groove none;}
@@ -13,12 +29,8 @@ img.imgNav {filter: invert(100%);}
     margin: 15px -10px;
     padding-right: 10px;
     padding-left: 10px;
+    padding-bottom: 10px;
 }
-/*
-@media screen and (min-width: 480px) {
-    .content {padding-left: 30px; padding-right: 30px;}
-}
-*/
 
 /* Adjust icons so that they aren't cut off on MEDIUM devices */
 @media only screen 
@@ -27,7 +39,6 @@ and (max-device-width: 1024px)
 and (orientation: landscape) {
     .content {padding-left: 80px; padding-right: 80px;}
 }
-
 /* Hide icons on LARGE devices that they aren't cut off in early dimensions */
 @media only screen
 and (min-width: 1200px) 
@@ -36,21 +47,15 @@ and (orientation: landscape) {
     .logo {visibility: hidden;}
 }
 
-
 .banner {background-color: white; color: black; height: 200px;}
-
 .affix {
     top: 0;
     width: 100%;
     z-index: 9999 !important;
 }
-
 .navbar {margin-bottom: 0px;}   
-
 .affix ~ .container-fluid {position: relative; top: 50px;}
-
 .dropdown-menu {background-color: #222222;}
-
 #menu-item {color: white;}
 
 /*light pink*/
@@ -70,7 +75,6 @@ and (orientation: landscape) {
 /*#BA1414;#D3920E;/*#AA6ED8;/*#7C45A5;#45A54D;#368FE2;
    RED     ORANGE   lPURPLE  PURPLE   GREEN    lBLUE*/
 #blfs {border-color: #45A54D;}
-
 #pizzapi {border-color: #D3920E;}
 #description {
     padding-bottom: 10px;
@@ -78,6 +82,7 @@ and (orientation: landscape) {
     border-color: #BA1414;
 }
 
+img.imgNav {filter: invert(100%);}
 img.seal {
     width: 60px;
     height: 60px;
@@ -88,7 +93,6 @@ img.seal {
     opacity: 0.8;
     transition: filter 1s;
 }
-
 img.seal:hover {
     filter: grayscale(0%);
 }

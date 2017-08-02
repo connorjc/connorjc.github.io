@@ -70,7 +70,7 @@
   </div>
 </nav>
 
-<div id="about" class="container-fluid text-center page">
+<section id="about" class="container-fluid text-center page">
   <h2>About</h2>
   <div class="container text-left content">
 
@@ -89,20 +89,15 @@
      contact information.</p>
 -->
   </div>
-</div>
+</section>
    
-<div id="resume" class="container-fluid text-center page">
+<section id="resume" class="container-fluid text-center page">
   <h2>Résumé</h2>
   <p>
     <span class="glyphicon glyphicon-paperclip"></span>
     <a target="_blank" href="connor_christian.pdf">connor_christian.pdf</a>
   </p>
-<!--
-  <p class="visible-lg">LG Dev</p>
-  <p class="visible-md">MD Dev</p>
-  <p class="visible-sm">SM Dev</p>
-  <p class="visible-xs">XS Dev</p>
--->
+
   <div class="container text-left content">
     <h4 class="section"><b>Education</b></h4>
     <p>
@@ -266,11 +261,11 @@
     </ul>
     <p><b>Programming Languages</b></p>
     <ul>
-      <li>Bash (Proficient)</li>
       <li>C++ (Proficient)</li>
       <li>C (Intermediate)</li>
       <li>Java (Intermediate)</li>
       <li>Python (Intermediate)</li>
+      <li>Bash (Intermediate)</li>
     </ul>
     <p><b>Web Development</b></p>
     <ul>
@@ -280,23 +275,28 @@
       <li>Bootstrap (Basic)</li>
     </ul>
   </div>
-</div>
+</section>
 
-<div id="projects" class="container-fluid text-center page">
+<section id="projects" class="container-fluid text-center page">
   <h2>Projects</h2>
   <p>
     <span id="uname">connorjc @ </span>
     <a href="https://github.com/connorjc" target="_blank">
       <img src="images/GitHub-Mark-120px-plus.png" alt="GitHub" width="25" height="25"></a>
-    <a href="https://bitbucket.org/connorjc/" target="_blank">
+    <a href="https://bitbucket.org/connorjc" target="_blank">
       <img src="images/bitbucket.png" alt="Bitbucket" width="25" height="25"></a>
   </p>
-  
+<!-- 
+  <p class="visible-lg">LG Dev</p>
+  <p class="visible-md">MD Dev</p>
+  <p class="visible-sm">SM Dev</p>
+  <p class="visible-xs">XS Dev</p>
+-->
   <div class="container text-left content">
     <div id="blfs" class="code_block">
       <h3>
         <a href="http://www.linuxfromscratch.org/lfs/view/stable/" target="_blank">
-          Linux from Scratch
+          Linux From Scratch
         </a>
          and 
         <a href="http://www.linuxfromscratch.org/blfs/view/stable/" target="_blank">
@@ -304,24 +304,46 @@
         </a>
       </h3>
       <p>
-        Building Linux from Scratch (LFS), and <i>Beyond Linux From Scratch 
+        Building Linux From Scratch (LFS), and <i>Beyond Linux From Scratch 
         (BLFS)</i>, is a challenging and rewarding exercise for a <b>system 
         administrator</b>. In doing this, I have become <b>thoroughly familiar with
         all of the parts of a Linux system</b>.
         <br>
         <br>
         I built my LFS distro using 
-        <a href="http://www.qemu.org" target="_blank">qemu</a>
+        <a href="https://www.qemu.org" target="_blank">qemu</a>
         and 
-        <a href="http://www.salixos.org" target="_blank">salix</a>
-        . To run it, use qemu.
-      </p>
-      <p class="text-center">
+        <a href="https://www.salixos.org" target="_blank">salix</a>
+        .<br>To try it, download blfs and install qemu.<br><br> 
         <a href="https://cchristian.ddns.net/blfs.img" download>
           <button type="button" class="btn btn-default btn-sm">
             <span class="glyphicon glyphicon-download-alt"></span>&ensp;BLFS v8
           </button>
         </a>
+        <br>
+        <br>
+        Run qemu:
+      </p>
+      <p>
+        <code class="command visible-xs">
+          qemu-system-x86_64&nbsp;&nbsp;\
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;-hda blfs.img&nbsp;&nbsp;&nbsp;\
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;-boot d&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\
+          <br>&nbsp;&nbsp;&nbsp;&nbsp;-m 2048  
+        </code>
+        <code class="command hidden-xs">
+          qemu-system-x86_64 -hda blfs.img -boot d -m 2048
+        </code>
+        <br class="hidden-xs">
+        <br>
+        Login:
+        <br>
+        <br>
+        <code class="command">
+          <samp>sysadmin-107 login: </samp>
+          testuser
+        </code>
       </p>
     </div>
     <div id="pizzapi" class="code_block">
@@ -329,7 +351,7 @@
         <a href="https://github.com/Francoded/PizzaPi" target="_blank">PizzaPi</a>
       </h3>
       <p>
-        This was my <b>Software Engineering</b> class project. I worked on a 
+        This was my <b>software engineering</b> class project. I worked on a 
         team of eight, subdivided into two teams, <i>Andriod</i> and
         <i>Server</i>, with two subdivisions each. This was so everyone was able
         to <b>pair program</b>.
@@ -347,8 +369,20 @@
         recipes with the ingredients they have in their homes.
       </p>
     </div>
+<!-- TODO:
+    <div id="mines" class="code_block">
+      <h3>
+        <a href="https://github.com/connorjc/minesweeper-python" target="_blank">
+          Minesweeper
+        </a>
+      </h3>
+      <p>
+        About minesweeper...
+      </p>
+    </div>
+-->
   </div>
-</div>
+</section>
 
 <footer>
 <nav class="navbar navbar-inverse">
@@ -378,12 +412,12 @@
           </a>
         </li>
         <li>
-          <a href="https://bitbucket.org/connorjc/" target="_blank">
+          <a href="https://bitbucket.org/connorjc" target="_blank">
             <img src="images/bitbucket.png" alt="Bitbucket" width="25" height="25">
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/connor-christian-251865145/" target="_blank">
+          <a href="https://www.linkedin.com/in/connor-christian-251865145" target="_blank">
             <img src="images/Linkedin-TM.png" alt="Linkedin" width="25" height="25">
           </a>
         </li>
