@@ -1,5 +1,2 @@
 # Do not include Beyond Linux from Scratch. Too large
 blfs.img
-
-#No need to have this on the repo
-GitHub-Mark.zip
