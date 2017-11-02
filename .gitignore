@@ -1,2 +1,4 @@
 # Do not include Beyond Linux from Scratch. Too large
 blfs.img
+# redundant
+favicons.zip
