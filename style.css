@@ -59,7 +59,7 @@ and (orientation: landscape) {
 #menu-item {color: white;}
 
 /*light pink*/
-#about {background-color: #F3B4B4;}
+#about {background-color: #A3C2DB;}
 /*almond*/
 #resume {background-color: #EFDECD;}
 /*light gray*/
@@ -72,8 +72,9 @@ and (orientation: landscape) {
 
 #uname {font-size: 17px;}
 
-/*#782F40;#AA8B46;#BA1414;#D3920E;/*#AA6ED8;/*#7C45A5;#45A54D;#368FE2;#095FA3;
-  GARNET   GOLD   RED     ORANGE   lPURPLE  PURPLE   GREEN    lBLUE   SSFBLUE*/
+/*#782F40;#AA8B46;#BA1414;#D3920E;#AA6ED8;#7C45A5;#45A54D;#368FE2;#095FA3;
+   GARNET  GOLD    RED     ORANGE  lPURPLE PURPLE  GREEN   lBLUE   SSFBLUE*/
+#bmbuddy {border-color: #095FA3;}
 #listserv {border-color: #782F40;}
 #blfs {border-color: #45A54D;}
 #pizzapi {border-color: #D3920E;}
